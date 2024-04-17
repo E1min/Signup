@@ -117,13 +117,28 @@ ul li{
     background-color: rgba(128, 128, 128, 0.315);
     transition: .2s all;
 }
-
+.todoli{
+    cursor: pointer;
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    font-weight: 500;
+    border: 1px solid rgba(128, 128, 128, 0.150);
+    background-color: rgba(128, 128, 128, 0.315);
+    transition: .2s all;
+    list-style-type: decimal;
+    text-align: left;
+}
 .center-body{
    position: relative;
    top: 53px;
    left: 50px;
    text-align: center;
-   display: none;
+   /* display: none; */
+}
+
+.changepassword{
+    display: none;
 }
 
 .succesdisp{
@@ -136,6 +151,18 @@ ul li{
     transition: .2s all;
     display: none;
 }
+
+.succesadd{
+    display: flex;
+    align-items: center;
+    color: green;
+    gap: 10px;
+    position: absolute;
+    top: -20px;
+    transition: .2s all;
+    display: none;
+}
+
 
 .errordisp{
     width: 100%;

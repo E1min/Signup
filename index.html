@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./user-plus-solid.svg" type="image/x-icon">
     <title>Login Page</title>
 </head>
 
@@ -60,16 +61,29 @@
     <div class="left-body">
         <h2>Account Settings</h2>
         <ul>
+            <li class="li-active">My Todos</li>
             <li>Change Password</li>
             <li>Upload Photo</li>
         </ul>
     </div>
     <div class="center-body">
-      <div class="succesdisp">  <h2>Succes Changed</h2><i class="fa-solid fa-check"></i></div>
-      <div class="errordisp">  <h2>Wrong Current Password</h2><i class="fa-solid fa-xmark"></i></div>
-        <input type="password" placeholder="enter current password" id="current-pass">
-        <input type="password" placeholder="enter new password" id="new-pass">
-        <button>Confirm</button>
+        <div class="mytodos">
+            <div class="succesadd"><h2>Succes Added</h2><i class="fa-solid fa-check"></i></div>
+            <input type="text" id="todoinput" placeholder="Add your description">
+            <button type="submit" id="addtodo">Add</button>
+            <div class="showtodo">
+                <ul>
+
+                </ul>
+            </div>
+        </div>
+        <div class="changepassword">
+            <div class="succesdisp">  <h2>Succes Changed</h2><i class="fa-solid fa-check"></i></div>
+            <div class="errordisp">  <h2>Wrong Current Password</h2><i class="fa-solid fa-xmark"></i></div>
+            <input type="password" placeholder="enter current password" id="current-pass">
+            <input type="password" placeholder="enter new password" id="new-pass">
+            <button id="confirm">Confirm</button>
+        </div>
     </div>
 
 </div>
